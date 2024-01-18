@@ -223,11 +223,11 @@ body {
   }
 }
 
-.js-tabcontent section {
+.js .js-tabcontent section {
   display: none;
 }
 
-.js-tabcontent section.ativo {
+.js .js-tabcontent section.ativo {
   display: block !important;
   animation: show 0.5s forwards;
 }
