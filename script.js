@@ -1,3 +1,4 @@
+function initTabNav() {
 const tabMenu = document.querySelectorAll(".js-tabmenu li");
 const tabContent = document.querySelectorAll(".js-tabcontent section");
 
@@ -17,3 +18,16 @@ tabMenu.forEach((itemMenu, index) => {
     }) 
 });
 };
+};
+initTabNav();
+
+const accordionList = document.querySelectorAll('.js-accordion dt');
+
+function activeAccordion() {
+    this.classList.toggle('ativo');
+    this.nextElementSibling.classList.toggle('ativo');
+}
+
+accordionList.forEach((item) => {
+    item.addEventListener('click', activeAccordion);
+})
